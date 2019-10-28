@@ -12,7 +12,7 @@ class Triangle
   end
   
   def kind
-    if self.sides.any?{|side| side <= 0} || self.sides.any?{|side| side > self.sides.delete(side).sum}
+    if self.sides.any?{|side| side <= 0} || self.sides.any?{|side| side > self.sides.r.sum}
       raise TriangleError
     end
   end
