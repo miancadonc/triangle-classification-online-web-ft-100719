@@ -15,6 +15,7 @@ class Triangle
     if self.sides.any?{|side| side <= 0} || self.sides.any?{|side| side >= (self.sides.sum - side)}
       raise TriangleError
     end
+    self.sides.reject{|side| side != @side_one}.size
   end
   
   class TriangleError < StandardError
