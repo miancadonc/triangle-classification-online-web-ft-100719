@@ -12,7 +12,7 @@ class Triangle
   end
   
   def kind
-    if self.sides.any?{|side| side <= 0} || 
+    if self.sides.any?{|side| side <= 0} || self.sides.any?{|side| side }
       raise TriangleError
     end
   end
