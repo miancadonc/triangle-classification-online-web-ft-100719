@@ -20,7 +20,7 @@ class Triangle
     when 3
       :scalene
     when 2
-      :isoceles
+      :isosceles
     when 1
       :equilateral
     end
